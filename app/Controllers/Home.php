@@ -27,7 +27,7 @@ class Home extends BaseController
         $datos['datos'] = $puestos->findAll();
         return view('vista_puesto', $datos);
     }
-    public function agregarEmplado(): string
+    public function agregarEmplado()
     {
         //crear objeto tipo empleados model
         $empleados = new empleadosModel();
@@ -40,8 +40,10 @@ class Home extends BaseController
             'puesto_id'   => $this->request->getPost('puesto_id'),
             'fecha_nac'   => $this->request->getPost('fecha_nac')
         ];
+    
         $empleados->insert($datos);
-        $this->index();
+        return $this->empleados();
+        
     }
     public function eliminarEmpleado(int $id): string
     {
