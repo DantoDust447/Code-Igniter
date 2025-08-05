@@ -17,10 +17,6 @@
         Agregar empleado
     </button>
     <br><br>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal0">
-        Eliminar empleado
-    </button>
-    <br><br><br>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -78,32 +74,8 @@
             </div>
         </div>
     </div>
-        <div class="modal fade" id="exampleModal0" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar datos</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!--id-->
-                    <form action="agregarEmpleado" method="post">
-                        <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">id</span>
-                            <input type="number" class="form-control" aria-label="Sizing example input" placeholder="id del empleado"
-                                aria-describedby="inputGroup-sizing-sm" id="empleado_id" name="empleado_id" required>
-                        </div>
-                    </form>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" id="delete">Eliminar</button>
-                </div>
-            </div>
-        </div>
     </div>
-    <table class="table">
+    <div class="container"><table class="table">
         <thead>
             <tr>
                 <th scope="col">ID</th>
@@ -112,6 +84,7 @@
                 <th scope="col">Telefono</th>
                 <th scope="col">Puesto</th>
                 <th scope="col">fecha de nacimiento</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -136,6 +109,8 @@
     </table>
     <?php
         ?>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
     </script>
