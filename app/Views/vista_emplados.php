@@ -98,7 +98,7 @@
                 <td><?=$empleado['puesto_id'];?></td>
                 <td><?=$empleado['fecha_nac'];?></td>
                 <td>
-                    <a href="<?=base_url('eliminarEmpleado/').$empleado['empleado_id'];?>" class="btn btn-danger" ><i class="bi bi-trash"></i></a>
+                    <a href="<?=base_url('eliminarEmpleado/').$empleado['empleado_id'];?>" class="btn btn-outline-danger" ><i class="bi bi-trash"></i></a>
                     <a href="<?=base_url('buscarEmpleado/').$empleado['empleado_id'];?>" type="button" class="btn btn-outline-light" ><i class="bi bi-search"></i></a>
                 </td>
             </tr>

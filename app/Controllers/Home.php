@@ -74,6 +74,6 @@ class Home extends BaseController
         ];
         //actualizar datos
         $empleados->update($datos['empleado_id'], $datos);
-        return $this->index(); // Redirigir a la lista de empleados
+        return $this->empleados(); // Redirigir a la lista de empleados
     }
 }
