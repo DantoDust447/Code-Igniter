@@ -5,28 +5,25 @@ use App\Models\empleadosModel;
 use App\Models\puestoModel;
 class Home extends BaseController
 {
+    //vistas
     public function index(): string
     {
         return view('welcome_message');
     }
     public function empleados(): string
     {
-        // Load the view for empleados
-        //crear objeto tipo empleados model
         $empleados = new empleadosModel();
-        //buscar datos
         $datos['datos'] = $empleados->findAll();
         return view('vista_emplados', $datos);
     }
     public function puestos(): string
     {
-        // Load the view for puestos
-        //crear objeto tipo puesto model
         $puestos = new puestoModel();
-        //buscar datos
         $datos['datos'] = $puestos->findAll();
         return view('vista_puesto', $datos);
     }
+
+    //acciones
     public function agregarEmplado()
     {
         //crear objeto tipo empleados model
@@ -38,20 +35,20 @@ class Home extends BaseController
             'apellido'    => $this->request->getPost('apellido'),
             'telefono'    => $this->request->getPost('telefono'),
             'puesto_id'   => $this->request->getPost('puesto_id'),
-            'fecha_nac'   => $this->request->getPost('fecha_nac')
+            'fecha_nacimiento'   => $this->request->getPost('fecha_nac')
         ];
     
         $empleados->insert($datos);
-        return $this->empleados();
+        return redirect()->to('empleados'); // Redirigir a la lista de empleados
         
     }
-    public function eliminarEmpleado(int $id): string
+    public function eliminarEmpleado(int $id)
     {
         //crear objeto tipo empleados model
         $empleados = new empleadosModel();
         //eliminar empleado por id
         $empleados->delete($id);
-        return $this->empleados(); // Redirigir a la lista de empleados
+        return redirect()->to('empleados'); // Redirigir a la lista de empleados
     }
     public function buscarEmpleado($id)
     {
@@ -70,10 +67,10 @@ class Home extends BaseController
             'apellido'    => $this->request->getPost('apellido'),
             'telefono'    => $this->request->getPost('telefono'),
             'puesto_id'   => $this->request->getPost('puesto_id'),
-            'fecha_nac'   => $this->request->getPost('fecha_nac')
+            'fecha_nacimiento'   => $this->request->getPost('fecha_nac')
         ];
         //actualizar datos
         $empleados->update($datos['empleado_id'], $datos);
-        return $this->empleados(); // Redirigir a la lista de empleados
+        return redirect()->to('empleados'); // Redirigir a la lista de empleados
     }
 }

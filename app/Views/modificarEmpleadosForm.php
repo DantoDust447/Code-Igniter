@@ -16,7 +16,7 @@
                         <div class="input-group input-group-sm mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-sm">id</span>
                             <input type="number" class="form-control" aria-label="Sizing example input" placeholder="<?=$datos['empleado_id'];?>"
-                                aria-describedby="inputGroup-sizing-sm" id="empleado_id" name="empleado_id" values="<?=$datos['empleado_id'];?>" readonly>
+                                aria-describedby="inputGroup-sizing-sm" id="empleado_id" name="empleado_id" value="<?=$datos['empleado_id'];?>" readonly>
                         </div>
                         <!--nombre-->
                         <div class="input-group input-group-sm mb-3">
@@ -46,7 +46,7 @@
                         <div class="input-group input-group-sm mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-sm">Fecha de Nacimiento</span>
                             <input type="date" class="form-control" aria-label="Sizing example input" id="fecha_nac" name="fecha_nac"
-                                placeholder="Fecha de Nacimiento" aria-describedby="inputGroup-sizing-sm" value="<?=$datos['fecha_nac'];?>" required>
+                                placeholder="Fecha de Nacimiento" aria-describedby="inputGroup-sizing-sm" value="<?=$datos['fecha_nacimiento'];?>" required>
                         </div>
                         <button type="submit" class="btn btn-outline-warning" id="add">Actualizar</button>
                     </form>

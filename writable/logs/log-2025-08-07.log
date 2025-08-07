@@ -1,0 +1,1679 @@
+ERROR - 2025-08-07 14:07:46 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:07:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:07:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:07:46 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(27): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:15:31 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:15:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:31 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:15:32 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:15:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:32 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:15:32 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:15:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:32 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:15:33 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:15:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:33 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:15:33 --> mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->puestos()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:15:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+[Method: GET, Route: puestos]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:15:33 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.puesto' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `puesto`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `puesto`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `puesto`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `puesto`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(24): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->puestos()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:23:38 --> Error: Class "App\Models\marcasModel" not found
+[Method: GET, Route: marcas]
+in APPPATH\Controllers\Home.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:24:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_marcas.php"
+[Method: GET, Route: marcas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_marcas.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('vista_marcas')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:24:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_marcas.php"
+[Method: GET, Route: marcas]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_marcas.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 3 APPPATH\Controllers\Home.php(32): view('vista_marcas')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:24:48 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 91.
+ 1 APPPATH\Views\vista_marcas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 91)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:25:47 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 91.
+ 1 APPPATH\Views\vista_marcas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 91)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:26:00 --> ErrorException: Undefined variable $datos
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 91.
+ 1 APPPATH\Views\vista_marcas.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $datos', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 91)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:27:05 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 94.
+ 1 APPPATH\Views\vista_marcas.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:27:31 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 94.
+ 1 APPPATH\Views\vista_marcas.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:28:14 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 94.
+ 1 APPPATH\Views\vista_marcas.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:28:23 --> mysqli_sql_exception: Table 'fs2025_inventario.marca' doesn't exist in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->marcas()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-08-07 14:28:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.marca' doesn't exist
+[Method: GET, Route: marcas]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:28:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'fs2025_inventario.marca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:28:23 --> [Caused by] mysqli_sql_exception: Table 'fs2025_inventario.marca' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `marca`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `marca`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `marca`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marca`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Home.php(31): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:28:44 --> ErrorException: Undefined variable $empleado
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 94.
+ 1 APPPATH\Views\vista_marcas.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 94)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:29:04 --> ErrorException: Undefined array key "marcas"
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 95.
+ 1 APPPATH\Views\vista_marcas.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "marcas"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 95)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:29:34 --> ErrorException: Undefined array key "empleado_id"
+[Method: GET, Route: marcas]
+in APPPATH\Views\vista_marcas.php on line 97.
+ 1 APPPATH\Views\vista_marcas.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "empleado_id"', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php', 97)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_marcas.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_marcas', [], true)
+ 5 APPPATH\Controllers\Home.php(32): view('vista_marcas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:41:45 --> mysqli_sql_exception: Column 'apellido' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 14:41:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:41:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:41:45 --> [Caused by] mysqli_sql_exception: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:42:04 --> mysqli_sql_exception: Column 'apellido' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 14:42:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:42:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:42:04 --> [Caused by] mysqli_sql_exception: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:43:56 --> mysqli_sql_exception: Column 'apellido' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 14:43:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:43:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:43:56 --> [Caused by] mysqli_sql_exception: Column 'apellido' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (\'51\', \'Quaso\', NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 14:45:12 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 14:45:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:45:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 14:45:12 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:26:35 --> ParseError: syntax error, unexpected variable "$routes"
+[Method: GET, Route: marcas]
+in APPPATH\Config\Routes.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:27:20 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:27:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:27:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:27:20 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:28:05 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:28:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:05 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:28:11 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:28:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:11 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:28:45 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:28:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:28:45 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:29:52 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:29:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:29:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:29:52 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:31:05 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:31:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:31:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:31:05 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:32:31 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:32:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:32:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:32:31 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:32:43 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:32:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:32:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:32:43 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:36:09 --> mysqli_sql_exception: Column 'nombre' cannot be null in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(44): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:36:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:36:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:36:09 --> [Caused by] mysqli_sql_exception: Column 'nombre' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(44): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:36:31 --> mysqli_sql_exception: Duplicate entry '53' for key 'PRIMARY' in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Marcas.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:36:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '53' for key 'PRIMARY'
+[Method: POST, Route: agregarMarca]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:36:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '53' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marcas` (`marca_id`) VALUES (\'53\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marcas` (`marca_id`) VALUES (\'53\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:36:31 --> [Caused by] mysqli_sql_exception: Duplicate entry '53' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `marcas` (`marca_id`) VALUES (\'53\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marcas` (`marca_id`) VALUES (\'53\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marcas` (`marca_id`) VALUES (\'53\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:37:46 --> mysqli_sql_exception: Duplicate entry '51' for key 'PRIMARY' in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ma...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Marcas.php(25): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 15:37:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '51' for key 'PRIMARY'
+[Method: POST, Route: agregarMarca]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:37:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '51' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marcas` (`marca_id`) VALUES (\'51\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marcas` (`marca_id`) VALUES (\'51\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 15:37:46 --> [Caused by] mysqli_sql_exception: Duplicate entry '51' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `marcas` (`marca_id`) VALUES (\'51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `marcas` (`marca_id`) VALUES (\'51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `marcas` (`marca_id`) VALUES (\'51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `marcas` (`marca_id`) VALUES (:marca_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Marcas.php(25): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->agregarMarca()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 15:47:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'fs2025_inventario' in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'fs2025_inventar...', 3306, '', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Marcas.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Marcas->marcas()
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'fs2025_inventario' in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Marcas.php(12): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Marcas->marcas()
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-07 15:47:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'fs2025_inventario'
+[Method: GET, Route: marcas]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `marcas`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Marcas.php(12): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Marcas->marcas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Marcas))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-07 16:33:24 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `em...', 0)
+#1 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `em...')
+#2 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `em...')
+#3 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `em...', Array, false)
+#4 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\app\Controllers\Home.php(41): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+#9 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\fs2025\codeigniter4-Blackwave\codeigniter4-framework-dbc07dc\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-07 16:33:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1' for key 'PRIMARY'
+[Method: POST, Route: agregarEmpleado]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:, :fecha_nacimiento:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 16:33:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (\'1\', \'Pato\', \'Quaso\', \'787764\', \'1\', \'2025-08-01\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (\'1\', \'Pato\', \'Quaso\', \'787764\', \'1\', \'2025-08-01\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:, :fecha_nacimiento:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 16:33:24 --> [Caused by] mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (\'1\', \'Pato\', \'Quaso\', \'787764\', \'1\', \'2025-08-01\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (\'1\', \'Pato\', \'Quaso\', \'787764\', \'1\', \'2025-08-01\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (\'1\', \'Pato\', \'Quaso\', \'787764\', \'1\', \'2025-08-01\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `empleados` (`empleado_id`, `nombre`, `apellido`, `telefono`, `puesto_id`, `fecha_nacimiento`) VALUES (:empleado_id:, :nombre:, :apellido:, :telefono:, :puesto_id:, :fecha_nacimiento:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(41): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->agregarEmplado()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-07 16:45:55 --> TypeError: App\Controllers\Home::eliminarEmpleado(): Return value must be of type string, CodeIgniter\HTTP\RedirectResponse returned
+[Method: GET, Route: eliminarEmpleado/1]
+in APPPATH\Controllers\Home.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->eliminarEmpleado(1)
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

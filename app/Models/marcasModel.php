@@ -4,12 +4,12 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class puestoModel extends Model
+class marcasModel extends Model
 {
-    protected $table         = 'puestos';
-    protected $primaryKey    = 'puesto_id';
+    protected $table         = 'marcas';
+    protected $primaryKey    = 'marca_id';
     protected $allowedFields = [
-        'puesto_id', 'puesto'
+        'marca_id', 'marcas'
     ];
     //protected $returnType    = \App\Entities\User::class;
     //protected $useTimestamps = true;

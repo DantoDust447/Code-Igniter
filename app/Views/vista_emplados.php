@@ -27,7 +27,7 @@
                 </div>
                 <div class="modal-body">
                     <!--id-->
-                    <form action="agregarEmpleado" method="post">
+                    <form action="<?=base_url('agregarEmpleado');?>" method="post">
                         <div class="input-group input-group-sm mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-sm">id</span>
                             <input type="number" class="form-control" aria-label="Sizing example input" placeholder="id"
@@ -96,7 +96,7 @@
                 <td><?=$empleado['apellido'];?></td>
                 <td><?=$empleado['telefono'];?></td>
                 <td><?=$empleado['puesto_id'];?></td>
-                <td><?=$empleado['fecha_nac'];?></td>
+                <td><?=$empleado['fecha_nacimiento'];?></td>
                 <td>
                     <a href="<?=base_url('eliminarEmpleado/').$empleado['empleado_id'];?>" class="btn btn-outline-danger" ><i class="bi bi-trash"></i></a>
                     <a href="<?=base_url('buscarEmpleado/').$empleado['empleado_id'];?>" type="button" class="btn btn-outline-light" ><i class="bi bi-search"></i></a>
