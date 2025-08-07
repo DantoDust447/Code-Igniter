@@ -12,7 +12,7 @@ class Marcas extends BaseController
         $datos['datos'] = $marca->findAll();
         return view('vista_marcas', $datos);
     }
-        public function agregarMarca()
+    public function agregarMarca()
     {
         //crear objeto tipo empleados model
         $marca = new marcasModel();

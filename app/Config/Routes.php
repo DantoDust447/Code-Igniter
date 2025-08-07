@@ -8,7 +8,12 @@ use CodeIgniter\Router\RouteCollection;
 //vistas
 $routes->get('/', 'Home::empleados');
 $routes->get('empleados', 'Home::empleados');
-$routes->get('puestos', 'Home::puestos');
+//puestos
+$routes->get('puestos', 'Puestos::puestos');
+$routes->post('agregarPuesto', 'Puestos::agregarPuesto');
+$routes->get('buscarPuesto/(:num)', 'Puestos::buscarPuesto/$1');
+$routes->post('editarPuesto', 'Puestos::editarPuesto');
+$routes->get('eliminarPuesto/(:num)', 'Puestos::eliminarPuesto/$1');
 //marcas
 $routes->get('marcas', 'Marcas::marcas');
 $routes->post('agregarMarca', 'Marcas::agregarMarca');

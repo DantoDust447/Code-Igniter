@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\empleadosModel;
-use App\Models\puestoModel;
+use App\Models\EmpleadosModel;
+use App\Models\PuestoModel;
 class Home extends BaseController
 {
     //vistas
@@ -12,22 +12,16 @@ class Home extends BaseController
     }
     public function empleados(): string
     {
-        $empleados = new empleadosModel();
+        $empleados = new EmpleadosModel();
         $datos['datos'] = $empleados->findAll();
         return view('vista_emplados', $datos);
-    }
-    public function puestos(): string
-    {
-        $puestos = new puestoModel();
-        $datos['datos'] = $puestos->findAll();
-        return view('vista_puesto', $datos);
     }
 
     //acciones
     public function agregarEmplado()
     {
         //crear objeto tipo empleados model
-        $empleados = new empleadosModel();
+        $empleados = new EmpleadosModel();
         //recibir datos del formulario
         $datos = [
             'empleado_id' => $this->request->getPost('empleado_id'),
@@ -45,21 +39,21 @@ class Home extends BaseController
     public function eliminarEmpleado(int $id)
     {
         //crear objeto tipo empleados model
-        $empleados = new empleadosModel();
+        $empleados = new EmpleadosModel();
         //eliminar empleado por id
         $empleados->delete($id);
         return redirect()->to('empleados'); // Redirigir a la lista de empleados
     }
     public function buscarEmpleado($id)
     {
-        $empleados = new empleadosModel();
+        $empleados = new EmpleadosModel();
         $datos['datos'] = $empleados->where(['empleado_id' => $id])->first();
         return view('modificarEmpleadosForm', $datos); // Redirigir a la vista de empleados con los datos encontrados
     }
     public function editarEmpleado()
     {
         //crear objeto tipo empleados model
-        $empleados = new empleadosModel();
+        $empleados = new EmpleadosModel();
         //recibir datos del formulario
         $datos = [
             'empleado_id' => $this->request->getPost('empleado_id'),

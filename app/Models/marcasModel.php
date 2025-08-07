@@ -4,7 +4,7 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class marcasModel extends Model
+class MarcasModel extends Model
 {
     protected $table         = 'marcas';
     protected $primaryKey    = 'marca_id';
