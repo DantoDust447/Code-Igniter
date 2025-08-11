@@ -1,0 +1,42 @@
+CRITICAL - 2025-08-11 14:38:16 --> ErrorException: Undefined variable $marca
+[Method: POST, Route: agregarRol]
+in APPPATH\Views\vista_roles.php on line 72.
+ 1 APPPATH\Views\vista_roles.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_roles.php', 72)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_roles.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_roles', [], true)
+ 5 APPPATH\Controllers\Roles.php(11): view('vista_roles', [...])
+ 6 APPPATH\Controllers\Roles.php(23): App\Controllers\Roles->roles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Roles->agregarRol()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:38:46 --> ErrorException: Undefined variable $marca
+[Method: POST, Route: agregarRol]
+in APPPATH\Views\vista_roles.php on line 76.
+ 1 APPPATH\Views\vista_roles.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $marca', 'C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_roles.php', 76)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\fs2025\\codeigniter4-Blackwave\\codeigniter4-framework-dbc07dc\\app\\Views\\vista_roles.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_roles', [], true)
+ 5 APPPATH\Controllers\Roles.php(11): view('vista_roles', [...])
+ 6 APPPATH\Controllers\Roles.php(23): App\Controllers\Roles->roles()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Roles->agregarRol()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:40:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "modificarRolForm.php"
+[Method: GET, Route: buscarRol/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('modificarRolForm.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('modificarRolForm', [], true)
+ 3 APPPATH\Controllers\Roles.php(30): view('modificarRolForm', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Roles->buscarRol('3')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Roles))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

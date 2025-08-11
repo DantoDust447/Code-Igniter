@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Marcas</title>
+    <title>Roles</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
@@ -14,7 +14,7 @@
     <br><br><br>
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Agregar marca
+        Agregar rol
     </button>
     <br><br>
     <!-- Modal -->
@@ -27,17 +27,22 @@
                 </div>
                 <div class="modal-body">
                     <!--id-->
-                    <form action="agregarMarca" method="post">
+                    <form action="agregarRol" method="post">
                         <div class="input-group input-group-sm mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-sm">id</span>
                             <input type="number" class="form-control" aria-label="Sizing example input" placeholder="id"
-                                aria-describedby="inputGroup-sizing-sm" id="marca_id" name="marca_id" required>
+                                aria-describedby="inputGroup-sizing-sm" id="rol_id" name="rol_id" required>
                         </div>
                         <!--nombre-->
                         <div class="input-group input-group-sm mb-3">
-                            <span class="input-group-text" id="inputGroup-sizing-sm">Marca</span>
-                            <input type="text" class="form-control" aria-label="Sizing example input" id="marca" name="marca"
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Rol</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" id="nombre" name="nombre"
                                 placeholder="Marca" aria-describedby="inputGroup-sizing-sm" required>
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm">Descripción</span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" id="descripcion" name="descripcion"
+                                placeholder="Descripción del rol" aria-describedby="inputGroup-sizing-sm" required>
                         </div>
                         <button type="submit" class="btn btn-primary" id="add">Agregar</button>
                     </form>
@@ -55,19 +60,21 @@
         <thead>
             <tr>
                 <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
+                <th>Nombre</th>
+                <th scope="col">Descripción</th>
                 <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($datos as $marca){
+            <?php foreach ($datos as $roles){
                 ?>
             <tr>
-                <td><?=$marca['marca_id'];?></td>
-                <td><?=$marca['marca'];?></td>
+                <td><?=$roles['rol_id'];?></td>
+                <td><?=$roles['nombre'];?></td>
+                <td><?=$roles['descripcion'];?></td>
                 <td>
-                    <a href="<?=base_url('eliminarMarca/'.$marca['marca_id'])?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
-                    <a href="<?=base_url('buscarMarca/'.$marca['marca_id'])?>" class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></a>
+                    <a href="<?=base_url('eliminarRol/'.$roles['rol_id'])?>" class="btn btn-outline-danger"><i class="bi bi-trash"></i></a>
+                    <a href="<?=base_url('buscarRol/'.$roles['rol_id'])?>" class="btn btn-outline-warning"><i class="bi bi-pencil-square"></i></a>
                 </td>
             </tr>
             <?php
