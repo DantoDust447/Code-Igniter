@@ -30,8 +30,9 @@ $routes->post('agregarRol', 'Roles::agregarRol');
 $routes->get('buscarRol/(:num)', 'Roles::buscarRol/$1');
 $routes->post('editarRol', 'Roles::editarRol');
 $routes->get('eliminarRol/(:num)', 'Roles::eliminarRol/$1');
+
 //tipo_equipo
-$routes->get('tipo_equipo', 'TipoEquipo::tipoEquipo');
+$routes->get('TipoEquipo', 'TipoEquipo::TipoEquipo');
 $routes->post('agregarTipoEquipo', 'TipoEquipo::agregarTipoEquipo');
 $routes->get('buscarTipoEquipo/(:num)', 'TipoEquipo::buscarTipoEquipo/$1');
 $routes->post('editarTipoEquipo', 'TipoEquipo::editarTipoEquipo');

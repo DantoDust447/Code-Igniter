@@ -40,3 +40,363 @@ in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
  7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:47:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:48:13 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:50:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:52:01 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:52:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:52:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:52:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:52:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:54:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:54:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:54:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 14:54:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-11 16:04:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "vista_tipo_equipo.php"
+[Method: GET, Route: TipoEquipo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('vista_tipo_equipo.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('vista_tipo_equipo', [], true)
+ 3 APPPATH\Controllers\TipoEquipo.php(11): view('vista_tipo_equipo', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TipoEquipo->TipoEquipo()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TipoEquipo))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
